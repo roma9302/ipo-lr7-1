@@ -11,10 +11,10 @@ year = ['1985', '1573', '2145', '4525', '1998']
 
 books = {'title': title, 'author': author, 'year': year}
 
-# перебор все книги и применяем декоратор
+# перебор все книги и использеум декоратор
 for index in range(len(title)):
     @select
-    def output(index):  # добавляем параметр index
+    def output(index): 
         print(f"Название книги: {books['title'][index]}, Автор: {books['author'][index]}")
 
     output(index) 
